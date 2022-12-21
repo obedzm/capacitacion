@@ -1,0 +1,63 @@
+.container{
+    border: 1px solid black;
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.entrada{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.container_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label{
+    text-align: right;
+}
+
+/*DISEÑO PARA TABLETS*/
+@media screen and (min-width:641px) and (max-width:1023px){
+    label{
+        text-align: left;
+    }
+
+    body{
+        background-color: aqua;
+    }
+}
+
+/*DISEÑO PARA CELULARES*/
+@media screen and (max-width:640px){
+    label{
+        text-align: center;
+    }
+
+    body{
+        background-color: brown;
+    }
+}
+
+/*DISEÑO PARA PÁGINAS WEB*/
+@media screen and (min-width:1023px){
+    label{
+        text-align: center;
+    }
+
+    body{
+        background-color: green;
+    }
+}

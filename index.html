@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<div class="first_title"><h2>FORMULARIO DE CONTACTO:</h2></div>
+
+<body>   
+    <form action="" onsubmit="print_message(event)">
+        <div class="container">
+        
+            <label for="nombre" class="zeta">Nombre:*</label>    
+            <input type="text" class="equis" name="nombre" id="nombre" maxlength="100">
+
+            <label for="correo" class="zeta">Correo:*</label>
+            <input type="email" class="equis" name="correo" id="correo" maxlength="50">
+
+            <label for="telefono" class="zeta">Teléfono:</label>
+            <input type="tel" class="equis" name="telefono" id="telefono" maxlength="12">
+
+            <label for="sitio_web" class="zeta">Sitio web:</label>
+            <input type="url" class="equis" name="sitio_web" id="sitio_web" maxlength="100">
+            
+            <label for="asunto" class="zeta">Asunto:</label>
+            <input type="text" class="equis" name="asunto" id="asunto" maxlength = "100">
+            
+            <label for="mensaje" class="zeta">Mensaje:</label>
+            <textarea name="mensaje" class="equis" id="mensaje"></textarea>
+            
+            <button type="submit">Guardar</button>
+        </div>
+    </form>
+    <script src="funciones.js"></script>
+</body>
+</html>
