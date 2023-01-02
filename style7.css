@@ -1,0 +1,154 @@
+body{
+    background: #00d2ff;
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+}
+
+form{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    width: 30%;
+    padding: 10px 10px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.contenedor_principal{
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Andika', sans-serif;
+}
+
+input{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Andika', sans-serif;
+}
+
+button{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/*Samsung Galaxy S8*/
+@media screen and (min-width:360px) and (max-width:740px){
+
+    form{
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+        width: 70%;
+        padding: 10px 10px;
+        box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+    }
+
+    input{
+        width: 100%;
+        padding: 6px;
+        margin-bottom: 15px;
+        font-family: 'Andika', sans-serif;
+    }
+
+    button{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .contenedor_principal{
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*iPad Air*/
+@media screen and (min-width:820px) and (max-width:1180px){
+
+    form{
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+        width: 70%;
+        padding: 10px 10px;
+        box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+    }
+
+    input{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 25px;
+        font-family: 'Andika', sans-serif;
+    }
+
+    button{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .contenedor_principal{
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*Nest Hub*/
+@media screen and (min-width:1024px) and (max-width:600px){
+
+    form{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+        width: 70%;
+        padding: 10px 10px;
+        box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+    }
+
+    input{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 25px;
+        font-family: 'Andika', sans-serif;
+    }
+
+    button{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .contenedor_principal{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
