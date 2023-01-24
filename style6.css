@@ -11,12 +11,21 @@ body{
     flex-direction: column;
 }
 
+label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 form{
     background: white;
     width: 30%;
     padding: 10px 10px;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.5);
     border-radius: 10px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container_principal{
@@ -31,29 +40,43 @@ form{
 }
 
 input{
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 20px;
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 10px;
     font-family: 'Andika', sans-serif;
 }
 
 button{
-    width: 90%;
+    width: 100%;
     padding: 10px;
-}
-
-.entradas{
-    margin-bottom: 20px;
 }
 
 .first_title{
     margin-bottom: 10px;
     text-align: center;
+    color: black;
     font-family: 'Andika', sans-serif;
 }
 
+p{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contador{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-right: 30%;
+    margin-bottom: 3%;
+}
+
+.cont{
+    color: black;
+}
+
 /*Samsung Galaxy S8*/
-@media screen and (min-width:360px) and (max-width:740px){
+/*@media screen and (min-width:360px) and (max-width:740px){
 
     .container_center{
         display: flex;
@@ -83,10 +106,10 @@ button{
         margin-bottom: 30px;
         font-family: 'Andika', sans-serif;
     }
-}
+}*/
 
 /*iPad Air*/
-@media screen and (min-width:820px) and (max-width:1180px){
+/*@media screen and (min-width:820px) and (max-width:1180px){
     
     .container_center{
         display: flex;
@@ -117,10 +140,10 @@ button{
         font-family: 'Andika', sans-serif;
     }
 
-}
+}*/
 
 /*Nest Hub*/
-@media screen and (min-width:1024px) and (max-width:600px){
+/*@media screen and (min-width:1024px) and (max-width:600px){
 
     .container_center{
         display: flex;
@@ -150,4 +173,4 @@ button{
         margin-bottom: 30px;
         font-family: 'Andika', sans-serif;
     }
-}
+}*/

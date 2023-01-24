@@ -10,24 +10,44 @@
 <body>
     <div class="contenedor_principal">
         
-        <form>
-            
+        <form onsubmit="valida_registro(event)">
+            <!--TODO: -->
             <div class="titulo"><h2>Registro de usuario</h2></div>
             
-            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
-            
+            <label id="usuario_validacion"></label>
             <input type="text" name="usuario" id="usuario" placeholder="Crear usuario">
 
-            <input type="password" name="password" id="password" placeholder="Crear contraseña">
+            <label id="pass_validacion"></label>
+            <input type="password" name="password" id="password" placeholder="Crear contraseña">  
 
+            <label id="correo_validacion"></label>
             <input type="email" name="email" id="email" placeholder="Ingresa tu email">
 
+            <label id="tel_validacion"></label>
             <input type="tel" name="telefono" id="telefono" placeholder="Ingresa tu número de teléfono">
 
+            <label id="web_validacion"></label>
+            <input type="url" name="web" id="web" placeholder="Ingresa sitio web">
+            
+            <label id="txt_valida"></label>
+            <textarea class="textarea" id="txtA" maxlength="100"></textarea>
+            
+            <div class="ta">
+                <label class="ch" id="ch">0/100</label> 
+            </div>
 
-            <button type="submit">Registrarse</button>
+            <button type="submit" id="btn-abrir-modal">Registrarse</button>
+            <!-- <button type="reset" onclick="limpiar()">Limpiar</button> -->
+            <!-- <button id="btn-abrir-modal">Abrir Modal</button> -->
 
+            <dialog class = "modal_tamaño" id="modal">
+            <h2>REGISTRO EXITOSO</h2>
+            <p></p>
+            <button type="reset" onclick="limpiar()" id="btn-cerrar-modal">Cerrar</button>
+        </dialog>
         </form>
+
     </div>
+    <script src="validacion_registro.js"></script>
 </body>
 </html>

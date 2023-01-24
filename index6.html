@@ -10,18 +10,24 @@
 
 <body>
     <div class="container_principal">
-    <form>
+    <form onsubmit="validar_login(event)">
         <div class="container_center">
             <div class="first_title"><h2>FORMULARIO DE CONTACTO:</h2></div>
 
             <div class="container">
                 <div class="entradas">
-                    <!-- <label for="usuario">Usuario</label> -->
+                    <label for="usuario" id="usuario_validacion"></label>
                     <input type="text" name="usuario" id="usuario" placeholder="Ingresa tu usuario">
 
-                    <!-- <label for="password">Contraseña</label> -->
-                    <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
+                    <label for="password" id="password_validacion"></label>
+                    <input maxlength="10" type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
+                    <div class="contador">
+                        <label class="cont" id="cont">0/10</label>
+                    </div>
+
                 </div>
+                <input type="button" name="btn" onclick="mostrar_password()" value="Mostrar contraseña">
+                <!-- <button >Mostrar contraseña</button> -->
                 <button type="submit">Ingresar</button>
 
                 <p>Click aquí para <a href="index7.html">Registrarse</a></p>
@@ -29,5 +35,6 @@
         </div>
     </form>
 </div>
+<script src="validacion.js"></script>
 </body>
 </html>
